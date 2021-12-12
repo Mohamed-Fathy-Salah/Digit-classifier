@@ -4,10 +4,7 @@ import sys
 import tensorflow as tf
 import time
 
-# Check command-line arguments
-if len(sys.argv) != 2:
-    sys.exit("Usage: python recognition.py model")
-model = tf.keras.models.load_model(sys.argv[1])
+model = tf.keras.models.load_model('model.h5')
 
 # Colors
 BLACK = (0, 0, 0)
